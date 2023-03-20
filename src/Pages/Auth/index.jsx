@@ -27,7 +27,7 @@ export function AuthPages(props) {
                 .open({
                   type: 'loading',
                   content: 'Verificando Processos..',
-                  duration: 2.5,
+                  duration: 1.5,
                 })
                 .then(() => message.success('Logado com sucesso.', 1.5))
                 .then(() => navigate('/'))
@@ -37,7 +37,7 @@ export function AuthPages(props) {
                 .open({
                   type: 'loading',
                   content: 'Verificando Processos..',
-                  duration: 2.5,
+                  duration: 1.5,
                 })
                 .then(() => message.error('Campo Senha está vazio.', 2.5))
             }else{
@@ -45,7 +45,7 @@ export function AuthPages(props) {
                 .open({
                   type: 'loading',
                   content: 'Verificando Processos..',
-                  duration: 2.5,
+                  duration: 1.5,
                 })
                 .then(() => message.warning('Usuário e senha não combinam.', 2.5))
 
@@ -76,7 +76,7 @@ export function AuthPages(props) {
                     <div class="form-container sign-up-container">
                         <div class="form" action="#">
                             <h1>Criar Conta</h1>
-                            <input type="text" placeholder="Name" />
+                            <input type="text" placeholder="Professor" />
                             <input type="user" placeholder="Usuario"  />
                             <input type="password" placeholder="Senha"   />
                             <button>Criar</button>
@@ -99,7 +99,7 @@ export function AuthPages(props) {
                                 <button class="ghost" id="signIn" onClick={() => {document.getElementById('container').classList.remove("right-panel-active")}}>Fazer Login</button>
                             </div>
                             <div class="overlay-panel overlay-right">
-                                <img src="/logo.svg" />
+                                <img src="/logo-colegio-vencer.png" />
                                 <h1>Ola, Amigo!</h1>
                                 <p>Faça o login para acessar o sistema. </p>
                                 <button class="ghost" id="signUp" onClick={() => {document.getElementById('container').classList.add("right-panel-active")}}>Criar Conta</button>

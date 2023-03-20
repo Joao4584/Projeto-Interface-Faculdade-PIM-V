@@ -10,6 +10,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('/957888_OF18H90.jpg');
 
     h1 {
         font-weight: bold;
@@ -42,7 +43,7 @@ export const Container = styled.div`
     button {
         border-radius: 20px;
         border: 1px solid #192844;
-        background-color: #3c3580;
+        background-color: #354980;
         color: #FFFFFF;
         font-size: 12px;
         font-weight: bold;
@@ -90,7 +91,7 @@ export const Container = styled.div`
     }
 
     img{
-        width: 8rem;
+        width: 11rem;
         margin-bottom: 1rem;
     }
 
