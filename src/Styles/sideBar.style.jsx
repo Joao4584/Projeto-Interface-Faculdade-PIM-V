@@ -12,6 +12,7 @@ export const Content = styled.div`
         height: 100%;
         background-color: #023d71;
         border-top-right-radius: 1.8rem;
+        position: relative;
 
         .imageLogo{
             width: 100%;
@@ -50,6 +51,24 @@ export const Content = styled.div`
                 
                 }
             }
+        }
+        .trocar-conta{
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: 4rem;
+            justify-content: center;
+            gap: 1rem;
+            bottom: 0px;
+            
+        }
+        .ant-btn{
+            background-color: #2d609b;
+        }
+        .style-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 

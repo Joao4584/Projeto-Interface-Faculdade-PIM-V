@@ -22,7 +22,7 @@ export function NavBar(props) {
  return (
     <Styled.Content>
         <Search
-      placeholder="input search text"
+      placeholder="Pesquise Funções e Dados"
       enterButton="Search"
       className='search-div'
       size="large"

@@ -1,8 +1,12 @@
 // * Modules * //
 import React, {  } from 'react'
+import { Routes,Route } from "react-router";
 
 // * Exports * //
- import * as Styled from '../../Styles/Global/layout.style';
+import { Home } from '../../Pages/Home';
+import { Calendario } from '../../Pages/calendario';
+import { ItemsComponent } from '../../Pages/items';
+import * as Styled from '../../Styles/Global/layout.style';
 import { NavBar } from '../NavBar';
 import { SideBar } from '../SideBar';
  
@@ -18,7 +22,11 @@ export function Layout(props) {
          <Styled.NavBar>
             <NavBar />
          </Styled.NavBar>
-         Container
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/calendario" element={<Calendario />} />
+            <Route path="/itens" element={<ItemsComponent />} />
+        </Routes>
       </Styled.Container>
     </Styled.Layout>
  )

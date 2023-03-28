@@ -24,6 +24,8 @@ export const Container = styled.div`
     height: 100%;
 
 
+    overflow-x: hidden;
+   
 `;
 
 export const NavBar = styled.div`
